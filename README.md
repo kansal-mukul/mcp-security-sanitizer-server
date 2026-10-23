@@ -3,6 +3,38 @@
 A small MCP server that provides local, regex-based tools for redacting common
 secrets and personally identifiable information (PII).
 
+## Use the published server
+
+This server is published in the [official MCP Registry](https://registry.modelcontextprotocol.io/?q=saurabh).
+Search for **MCP Security Sanitizer** or the server name
+`io.github.saurabhdrh/mcp-security-sanitizer`, then add it to an MCP client
+that supports remote servers over SSE.
+
+![MCP Security Sanitizer published in the official MCP Registry](./registry-listing.png)
+
+You can also add the endpoint directly in a client that supports SSE:
+
+```text
+https://mcp-security-sanitizer-server.onrender.com/sse
+```
+
+For example, in VS Code, add this to `.vscode/mcp.json` in your workspace:
+
+```json
+{
+  "servers": {
+    "mcp-security-sanitizer": {
+      "type": "sse",
+      "url": "https://mcp-security-sanitizer-server.onrender.com/sse"
+    }
+  }
+}
+```
+
+After connecting, select one of the tools below and provide its `text`
+argument. The Render free service may take about a minute to respond when it
+has been idle and needs to wake up.
+
 > Regex matching only recognizes the patterns implemented here. It cannot
 > guarantee detection of every secret or PII value. Validate the patterns
 > against your requirements before relying on this service.
@@ -26,12 +58,14 @@ uv run server.py
 
 The server listens on `http://localhost:8000/sse`.
 
-## Deploy on Render
+## Hosting
 
-1. Push this repository to GitHub and create a **Web Service** on Render from
-   the repository. Render can use the included `render.yaml` configuration.
-2. Deploy the service. Render assigns the public URL and port automatically.
-3. Connect an MCP client to `https://<your-service>.onrender.com/sse`.
+The public MCP server is already hosted on Render at
+[`https://mcp-security-sanitizer-server.onrender.com/sse`](https://mcp-security-sanitizer-server.onrender.com/sse).
+The Registry entry above points to this live service. If you want to host a
+separate copy, create a Render Web Service from this repository; Render can
+use the included `render.yaml` configuration and assigns the public URL and
+port automatically.
 
 The service is public and has no authentication. Anyone with its URL can call
 the sanitizer tools, so do not send real credentials or sensitive personal
