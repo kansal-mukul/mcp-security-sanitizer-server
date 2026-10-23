@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mcp-security-sanitizer
+    runtime: python
+    buildCommand: pip install uv && uv sync --frozen
+    startCommand: uv run server.py

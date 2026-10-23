@@ -1,0 +1,12 @@
+[project]
+name = "mcp-security-sanitizer"
+version = "0.1.0"
+description = "An MCP service for secret and PII scrubbing."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0.0,<3.0.0",
+]
+
+[tool.uv]
+package = false
