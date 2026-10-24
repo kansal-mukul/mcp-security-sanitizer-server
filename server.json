@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://mcp-security-sanitizer-server.onrender.com/sse"
+      "url": "https://mcp-security-sanitizer-mk-server.onrender.com/sse"
     }
   ]
 }
