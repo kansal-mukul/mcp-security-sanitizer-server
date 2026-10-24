@@ -77,3 +77,9 @@ data unless you add suitable access controls.
 Sanitization runs locally in Python and does not call an LLM. Add tests for the
 secret and PII formats relevant to your environment before relying on the
 service for compliance.
+
+## Connect
+
+- **GitHub:** [MCP Security Sanitizer](https://github.com/kansal-mukul/mcp-security-sanitizer-server)
+- **MCP Registry:** [View the server listing](https://registry.modelcontextprotocol.io/?q=kansal-mukul)
+- **LinkedIn:** [Mukul Kansal](https://www.linkedin.com/in/kansalmukul/)
