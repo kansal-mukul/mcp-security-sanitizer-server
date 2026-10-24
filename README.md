@@ -5,12 +5,11 @@ secrets and personally identifiable information (PII).
 
 ## Use the published server
 
-This server is published in the [official MCP Registry](https://registry.modelcontextprotocol.io/?q=saurabh).
-Search for **MCP Security Sanitizer** or the server name
-`io.github.saurabhdrh/mcp-security-sanitizer`, then add it to an MCP client
+This project is configured for publication in the
+[official MCP Registry](https://registry.modelcontextprotocol.io/?q=kansal-mukul)
+under the server name `io.github.kansal-mukul/mcp-security-sanitizer`.
+After publishing, search for that name and add the server to an MCP client
 that supports remote servers over SSE.
-
-![MCP Security Sanitizer published in the official MCP Registry](./registry-listing.png)
 
 You can also add the endpoint directly in a client that supports SSE:
 
