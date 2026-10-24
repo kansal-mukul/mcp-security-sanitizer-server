@@ -4,7 +4,7 @@
   "title": "MCP Security Sanitizer",
   "description": "Redacts common secrets, email addresses, and phone numbers.",
   "repository": {
-    "url": "https://github.com/kansal-mukul/mcp-security-sanitizer",
+    "url": "https://github.com/kansal-mukul/mcp-security-sanitizer-server",
     "source": "github"
   },
   "version": "1.0.0",

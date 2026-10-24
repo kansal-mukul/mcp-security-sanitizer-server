@@ -14,7 +14,7 @@ that supports remote servers over SSE.
 You can also add the endpoint directly in a client that supports SSE:
 
 ```text
-https://mcp-security-sanitizer-server.onrender.com/sse
+https://mcp-security-sanitizer-mk-server.onrender.com/sse
 ```
 
 For example, in VS Code, add this to `.vscode/mcp.json` in your workspace:
@@ -24,7 +24,7 @@ For example, in VS Code, add this to `.vscode/mcp.json` in your workspace:
   "servers": {
     "mcp-security-sanitizer": {
       "type": "sse",
-      "url": "https://mcp-security-sanitizer-server.onrender.com/sse"
+      "url": "https://mcp-security-sanitizer-mk-server.onrender.com/sse"
     }
   }
 }
@@ -59,8 +59,8 @@ The server listens on `http://localhost:8000/sse`.
 
 ## Hosting
 
-The public MCP server is already hosted on Render at
-[`https://mcp-security-sanitizer-server.onrender.com/sse`](https://mcp-security-sanitizer-server.onrender.com/sse).
+The public MCP server is hosted on Render at
+[`https://mcp-security-sanitizer-mk-server.onrender.com/sse`](https://mcp-security-sanitizer-mk-server.onrender.com/sse).
 The Registry entry above points to this live service. If you want to host a
 separate copy, create a Render Web Service from this repository; Render can
 use the included `render.yaml` configuration and assigns the public URL and
