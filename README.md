@@ -11,6 +11,8 @@ under the server name `io.github.kansal-mukul/mcp-security-sanitizer`.
 After publishing, search for that name and add the server to an MCP client
 that supports remote servers over SSE.
 
+![MCP Security Sanitizer listed in the official MCP Registry](./registry-listing.png)
+
 You can also add the endpoint directly in a client that supports SSE:
 
 ```text
